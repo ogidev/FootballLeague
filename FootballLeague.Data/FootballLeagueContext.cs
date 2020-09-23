@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using FootballLeague.MVC.Areas.Identity.Data;
+using FootballLeague.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace FootballLeague.MVC.Data
+namespace FootballLeague.Data
 {
     public class FootballLeagueContext : IdentityDbContext<FootballLeagueUser>
     {
