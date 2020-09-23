@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballLeague.Web", "FootballLeague.Web\FootballLeague.Web.csproj", "{861DC975-EDEC-4210-81D0-9C3E9334CD73}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballLeague.MVC", "FootballLeague.MVC\FootballLeague.MVC.csproj", "{DB877D8F-ACCE-4C60-B986-1DA3E71FA4CE}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{861DC975-EDEC-4210-81D0-9C3E9334CD73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{861DC975-EDEC-4210-81D0-9C3E9334CD73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{861DC975-EDEC-4210-81D0-9C3E9334CD73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{861DC975-EDEC-4210-81D0-9C3E9334CD73}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB877D8F-ACCE-4C60-B986-1DA3E71FA4CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB877D8F-ACCE-4C60-B986-1DA3E71FA4CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB877D8F-ACCE-4C60-B986-1DA3E71FA4CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
