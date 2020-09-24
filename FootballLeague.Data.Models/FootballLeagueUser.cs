@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Identity;
 
 namespace FootballLeague.Data.Models
 {
-    // Add profile data for application users by adding properties to the FootballLeagueUser class
     public class FootballLeagueUser : IdentityUser
     {
     }
