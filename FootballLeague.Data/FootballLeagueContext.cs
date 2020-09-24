@@ -15,7 +15,8 @@ namespace FootballLeague.Data
             : base(options)
         {
         }
-
+        public DbSet<Team> Teams { get; set; }
+        public DbSet<Match> Matches { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
