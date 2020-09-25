@@ -32,6 +32,7 @@
   <ItemGroup>
     <ProjectReference Include="..\FootballLeague.Data.Models\FootballLeague.Data.Models.csproj" />
     <ProjectReference Include="..\FootballLeague.Data\FootballLeague.Data.csproj" />
+    <ProjectReference Include="..\FootballLeague.Services\FootballLeague.Services.csproj" />
   </ItemGroup>
 
 </Project>

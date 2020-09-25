@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FootballLeague.Data.Models;
 using FootballLeague.Data;
+using FootballLeague.Data.Models.Contracts;
 
 namespace FootballLeague.MVC
 {
@@ -42,6 +43,9 @@ namespace FootballLeague.MVC
             services.AddDefaultIdentity<FootballLeagueUser>().AddEntityFrameworkStores<FootballLeagueContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //application services
+            services.AddScoped(typeof(IRepository<>), typeof(DbRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +59,6 @@ namespace FootballLeague.MVC
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 

@@ -5,14 +5,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using FootballLeague.MVC.Models;
+using FootballLeague.Services;
 
 namespace FootballLeague.MVC.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IFootballLeagueService footballLeagueService;
+
+        public HomeController(IFootballLeagueService footballLeagueService)
+        {
+                this.footballLeagueService = footballLeagueService;
+        }
         public IActionResult Index()
         {
-            return View();
+            var ranking = this.footballLeagueService.GetTeamsRanking();
+            return View(ranking);
         }
 
         public IActionResult Privacy()
